@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="shortcut icon" href="../images/8 march.png" type="image/png">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <title>Айсель Абдулаева</title>
+    </head>
+
+    <style>
+        .girl {
+            border-style: dashed;
+        }
+
+        img {
+            border-radius: 10px;
+        }
+
+        body {
+            background-image: linear-gradient(15deg, #c45d85 0%, #bf6584 150%);
+        }
+
+        .border-button {
+            text-decoration: none;
+            display: inline-block;
+            padding: 20px 30px;
+            margin: 10px 20px;
+            position: relative;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, .4);
+            background: none;
+            font-weight: 300;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .border-button:before, .border-button:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            opacity: 0;
+            box-sizing: border-box;
+        }
+
+        .border-button:before {
+            bottom: 0;
+            left: 0;
+            border-left: 1px solid white;
+            border-top: 1px solid white;
+            transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+        }
+
+        .border-button:after {
+            top: 0;
+            right: 0;
+            border-right: 1px solid white;
+            border-bottom: 1px solid white;
+            transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+        }
+
+        .border-button:hover:before, 
+        .border-button:hover:after {
+            height: 100%;
+            width: 100%;
+            opacity: 1;
+        }
+
+        .border-button:hover:before {
+            transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+        }
+
+        .border-button:hover:after {
+            transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+        }
+
+        .border-button:hover {
+            background: rgba(255, 255, 255, .2);
+        }
+
+        a {
+            outline: none;
+            text-decoration: none;
+            padding: 2px 1px 0;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+    </style>
+
+    <body>
+        <div class="container"><div>
+            <img src="../images/aysel.jpg" align="left" width="320" height="426" style="margin-left: 20px;">
+            <h1 style="color: #fff;" align="center">Айсель Абдулаева</h1>
+            <ul type="disk" style="margin-left: 400px;">
+                <li>
+                    <h4 style="color: #fff;">Увлечения:</h4>
+                    <ul type="square">
+                        <li style="color: #fff;">Рисование</li>
+                        <li style="color: #fff;">Программирование</li>
+                        <li style="color: #fff;">Физика</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4 style="color: #fff;">Достижения:</h4>
+                    <ul type="square">
+                        <li style="color: #fff;">Весомые успехи в рисовании и английском</li>
+                        <li style="color: #fff;">2 место в районе на Русском Медвежонке</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <a href="girls.html" class="border-button" align="center">Обратно</a></div>
+
+        <script src="../script.js"></script>  
+    </body>
+</html>
